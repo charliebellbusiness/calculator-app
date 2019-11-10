@@ -1,0 +1,9 @@
+.ComputationScreen {
+    height: 3vh;
+    font-size: 15pt;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid #FFF;
+}

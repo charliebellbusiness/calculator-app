@@ -1,3 +1,8 @@
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -5,6 +10,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('https://steamuserimages-a.akamaihd.net/ugc/1001394355818943697/C2BC43AC5A3C1A2690560DA990A4013DBCB2B49C/');
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.App {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 code {

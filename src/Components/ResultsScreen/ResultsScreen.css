@@ -1,0 +1,10 @@
+.ResultsScreen {
+    background-color: green;
+    height: 9vh;
+    font-size: 40pt;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
