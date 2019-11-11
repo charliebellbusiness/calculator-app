@@ -25,7 +25,7 @@ class Calculator extends Component {
         if (pressedButtonValue === 'C') {
             this.clear();
             return;
-        } else if ((pressedButtonValue >= '0' && pressedButtonValue <= '9') || pressedButtonValue === '.') {
+        } else if ((pressedButtonValue >= '0' && pressedButtonValue <= '9') || pressedButtonValue === '.' || pressedButtonValue === '(' || pressedButtonValue === ')') {
             /* If the user has pressed a button with a value between 0 and 9 or the period, add that value to the equation */
             equation += pressedButtonValue;
         } else if (['+', '-', '*', '/', '%'].indexOf(pressedButtonValue) !== -1) {
@@ -46,9 +46,7 @@ class Calculator extends Component {
 
            }
         } else {
-            /* if the user presses the back arrow, remove the last character from the equation string */
-            equation = equation.trim();
-            equation = equation.substr(0, equation.length - 1);
+            console.log(pressedButtonValue);
         }
 
         /* Update our state with the new version of the equation */
@@ -56,7 +54,7 @@ class Calculator extends Component {
     }
 
     clear() {
-        this.setState ({ equation: '', result: 0});
+        this.setState ({ equation: '', result: 0 });
     }
     render() {
         return (
